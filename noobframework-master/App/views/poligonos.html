@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Polígonos</title>
+        <link rel="stylesheet" href="../../public/css/estilo.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Polígonos</h1>
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th class="text-center">Nome</th>
+                        <th class="text-center">Lados</th>
+                        <th class="text-center">Angulos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($poligonos as $poligonos) >
+                    <tr>
+                        <td><?php echo $poligonos['Nome']  ?></td>
+                        <td><?php echo $poligonos['Lados'] ?></td>
+                        <td><?php echo $poligonos['Angulos'] ?></td>
+                    </tr>
+                    
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+    </body>
+
+
+
+</html>
