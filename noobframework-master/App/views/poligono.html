@@ -1,0 +1,36 @@
+<?php
+?>
+<html>
+    <head>
+        <title>Polígonos</title>
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container" >
+            <h1><b><center>Polígonos</center></b></h1>
+            <hr>
+            <br>
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th class="text-center">Nome</th>
+                        <th class="text-center">Lados</th>
+                        <th class="text-center">Angulos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach( $poligono as $poligonos) {?>
+                    <tr>
+                        <td><?php echo $poligonos['nome_poligono']  ?></td>
+                        <td><?php echo $poligonos['lado_poligono'] ?></td>
+                        <td><?php echo $poligonos['angulo_poligono'] ?></td>
+                    </tr>
+                    <?php }?>
+                    
+
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
